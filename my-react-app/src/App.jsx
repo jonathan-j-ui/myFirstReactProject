@@ -29,7 +29,7 @@ const listItems = products.map(product =>
 
 export default function App() {
   return (
-    <div>
+    <>
       {isLoggedIn ? (
         <>
           <img src={user.img} />
@@ -39,6 +39,8 @@ export default function App() {
         <MyButton />
       )}
       <p>Sky is {!isSkyGreen && "not"} green.</p>
-    </div>
+
+      <ul>{listItems}</ul>
+    </>
   );
 }
