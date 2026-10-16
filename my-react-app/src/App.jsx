@@ -1,3 +1,5 @@
+import reactLogo from './assets/react.svg';
+
 function MyButton() {
   return (
     <button>I'm a button</button>
@@ -6,6 +8,7 @@ function MyButton() {
 
 const user = {
   name: "Jonathan",
+  img: reactLogo,
 };
 
 export default function App() {
@@ -13,6 +16,7 @@ export default function App() {
     <div>
       <h1>Welcome {user.name} to my app</h1>
       <MyButton />
+      <img src={user.img} />
     </div>
   );
 }
