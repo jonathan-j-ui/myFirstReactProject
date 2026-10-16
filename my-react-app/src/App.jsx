@@ -7,6 +7,8 @@ function MyButton() {
 }
 const isLoggedIn = true;
 
+const isSkyGreen = false;
+
 const user = {
   name: "Jonathan",
   img: reactLogo,
@@ -23,6 +25,7 @@ export default function App() {
       ) : (
         <MyButton />
       )}
+      <p>Sky is {!isSkyGreen && "not"} green.</p>
     </div>
   );
 }
