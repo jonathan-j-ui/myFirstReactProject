@@ -21,6 +21,12 @@ const products = [
   { title: 'Orange', id: 4 },
 ]
 
+const listItems = products.map(product =>
+  <li key={product.id}>
+    {product.title}
+  </li>
+);
+
 export default function App() {
   return (
     <div>
