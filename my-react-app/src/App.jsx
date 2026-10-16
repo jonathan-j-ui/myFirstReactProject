@@ -5,6 +5,7 @@ function MyButton() {
     <button>Login</button>
   );
 }
+const loggedIn = 1;
 
 const user = {
   name: "Jonathan",
@@ -12,10 +13,17 @@ const user = {
 };
 
 export default function App() {
+  let content;
+  if (loggedIn == 1){
+    content = <h1>Welcome {user.name} to my app</h1>;
+  }
+  else{
+    content = <MyButton />;
+  }
+
   return (
     <div>
-      <h1>Welcome {user.name} to my app</h1>
-      <MyButton />
+      {content}
       <img src={user.img} />
     </div>
   );
