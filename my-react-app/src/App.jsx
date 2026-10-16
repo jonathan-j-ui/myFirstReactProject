@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg';
 
 function MyButton() {
   return (
-    <button>I'm a button</button>
+    <button>Login</button>
   );
 }
 
