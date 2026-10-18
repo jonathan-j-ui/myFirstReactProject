@@ -1,11 +1,15 @@
 import reactLogo from './assets/react.svg';
 
 function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
   return (
-    <button>Login</button>
+    <button onClick={handleClick}>Login</button>
   );
 }
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 const isSkyGreen = false;
 
